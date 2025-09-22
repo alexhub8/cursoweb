@@ -1,2 +1,2 @@
 # cursoweb
-preentrega2 sin imégenes
+preentrega2 sin imágenes
