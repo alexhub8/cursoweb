@@ -1,0 +1,23 @@
+@use "variables";
+
+header {
+  background-color: variables.$primary-color;
+  padding: variables.$base-padding;
+  color: white;
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: variables.$font-stack;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

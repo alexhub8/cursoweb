@@ -1,0 +1,13 @@
+@use "sass:color";
+@use "variables";
+@use "mixins";
+@use "header";
+@use "footer";
+@use "components";
+
+body {
+  font-family: variables.$font-stack;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}

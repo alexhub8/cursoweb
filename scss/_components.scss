@@ -1,0 +1,11 @@
+@use "sass:color";
+@use "variables";
+@use "mixins";
+
+.btn-primary {
+  @include mixins.button-style(variables.$primary-color);
+}
+
+.btn-secondary {
+  @include mixins.button-style(variables.$secondary-color);
+}

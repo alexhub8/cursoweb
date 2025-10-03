@@ -3,58 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Inicio</title>
+  <title>Noticias FOSS</title>
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fuente Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header class="bg-dark text-white py-3">
-    <div class="container">
-      <h1 class="text-center">Noticias</h1>
-      <p class="text-center">Lo último en tecnología</p>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-             <li class="nav-item"><a class="nav-link" href="./pages/about.html">Acerca de Nosotros</a></li>
-             <li class="nav-item"><a class="nav-link" href="./pages/services.html">Nuestros Servicios</a></li>
-             <li class="nav-item"><a class="nav-link" href="./pages/gallery.html">Galería de Fotos</a></li>
-             <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contacto</a></li>
-          </ul>
-        </div>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div class="logo">
+        <h1 class="m-0">Noticias FOSS</h1>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">Software</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">OS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hardware</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Privacidad</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="#">🌐</a>
+        <a href="#">🐦</a>
+        <a href="#">📸</a>
+      </div>
+    </div>
   </header>
 
+  <!-- Contenido principal -->
   <main class="container my-5">
-    <section>
-      <h2 class="text-center mb-4">Galería de imágenes</h2>
-      <div class="gallery">
-        <div class="gallery-item">Imagen 1</div>
-        <div class="gallery-item">Imagen 2</div>
-        <div class="gallery-item">Imagen 3</div>
-        <div class="gallery-item">Imagen 4</div>
-        <div class="gallery-item">Imagen 5</div>
-        <div class="gallery-item">Imagen 6</div>
-        <div class="gallery-item">Imagen 7</div>
-        <div class="gallery-item">Imagen 8</div>
-      </div>
+    <section class="grid-news">
+      <!-- Noticia destacada -->
+      <article class="news big">
+        <h2>Título destacado</h2>
+        <p>Autor - fecha de publicación - cantidad de comentarios</p>
+      </article>
+
+      <!-- Noticias medianas -->
+      <article class="news medium">
+        <h3>Título noticia</h3>
+        <p>Autor - fecha - comentarios</p>
+      </article>
+      <article class="news medium">
+        <h3>Título noticia</h3>
+        <p>Autor - fecha - comentarios</p>
+      </article>
+
+      <!-- Noticias pequeñas -->
+      <article class="news small">
+        <h4>Título</h4>
+        <p>Subtítulo</p>
+      </article>
+      <article class="news small">
+        <h4>Título</h4>
+        <p>Subtítulo</p>
+      </article>
+      <article class="news small">
+        <h4>Título</h4>
+        <p>Subtítulo</p>
+      </article>
     </section>
+
+    <!-- Paginación -->
+    <div class="pagination text-center mt-4">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">&rarr;</a>
+    </div>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 Noticias. Todos los derechos reservados.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Noticias FOSS. Todos los derechos reservados.</p>
     <p>
-      <a href="../index.html">Inicio</a> | 
-      <a href="./about.html">Acerca de Nosotros</a> | 
-      <a href="./services.html">Servicios</a> | 
-      <a href="./gallery.html">Galería</a> | 
-      <a href="./contact.html">Contacto</a>
+      <a href="index.html">Inicio</a> | 
+      <a href="./pages/about.html">Acerca de Nosotros</a> | 
+      <a href="./pages/services.html">Servicios</a> | 
+      <a href="./pages/gallery.html">Galería</a> | 
+      <a href="./pages/contact.html">Contacto</a>
     </p>
   </footer>
 
