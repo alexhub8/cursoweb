@@ -11,7 +11,7 @@ header nav ul {
 header nav a {
   color: white;
   text-decoration: none;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 header nav a:hover {
   text-decoration: underline;
@@ -22,7 +22,7 @@ footer {
   padding: 1rem;
   color: white;
   text-align: center;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn-primary {
@@ -54,7 +54,7 @@ footer {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
